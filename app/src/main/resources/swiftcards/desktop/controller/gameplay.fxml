@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="800.0" maxWidth="1200.0" minHeight="800.0" minWidth="1200.0" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="swiftcards.desktop.controller.GameplayController">
+   <children>
+      <GridPane fx:id="cardGridPane" layoutY="630.0" maxHeight="160.0" maxWidth="1200.0" minHeight="160.0" minWidth="1200.0" prefHeight="160.0" prefWidth="1200.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <Pane fx:id="currentCardPane" layoutX="550.0" layoutY="300.0" maxHeight="100.0" maxWidth="100.0" minHeight="100.0" minWidth="100.0" prefHeight="100.0" prefWidth="100.0" />
+      <Pane fx:id="currentColorPane" layoutX="385.0" layoutY="550.0" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" prefHeight="50.0" prefWidth="50.0" />
+      <Text layoutX="240.0" layoutY="595.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%gameplay.current_color" />
+      <Pane fx:id="playerPane3" layoutY="50.0" maxHeight="100.0" maxWidth="100.0" minHeight="100.0" minWidth="100.0" prefHeight="100.0" prefWidth="100.0" />
+      <Text fx:id="playerName3" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%gameplay.player_3" textAlignment="CENTER" />
+      <Pane fx:id="playerPane2" layoutY="220.0" maxHeight="100.0" maxWidth="100.0" minHeight="100.0" minWidth="100.0" prefHeight="100.0" prefWidth="100.0" />
+      <Text fx:id="playerName2" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%gameplay.player_2" textAlignment="CENTER" />
+      <Pane fx:id="playerPane1" layoutY="390.0" maxHeight="100.0" maxWidth="100.0" minHeight="100.0" minWidth="100.0" prefHeight="100.0" prefWidth="100.0" />
+      <Text fx:id="playerName1" layoutY="510.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%gameplay.player_1" textAlignment="CENTER" />
+      <Pane fx:id="playerPane8" layoutX="1100.0" layoutY="50.0" maxHeight="100.0" maxWidth="100.0" minHeight="100.0" minWidth="100.0" prefHeight="100.0" prefWidth="100.0" />
+      <Text fx:id="playerName8" layoutX="1100.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%gameplay.player_8" textAlignment="CENTER" />
+      <Pane fx:id="playerPane9" layoutX="1100.0" layoutY="220.0" maxHeight="100.0" maxWidth="100.0" minHeight="100.0" minWidth="100.0" prefHeight="100.0" prefWidth="100.0" />
+      <Text fx:id="playerName9" layoutX="1100.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%gameplay.player_9" textAlignment="CENTER" />
+      <Pane fx:id="playerPane10" layoutX="1100.0" layoutY="390.0" maxHeight="100.0" maxWidth="100.0" minHeight="100.0" minWidth="100.0" prefHeight="100.0" prefWidth="100.0" />
+      <Text fx:id="playerName10" layoutX="1100.0" layoutY="510.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%gameplay.player_10" textAlignment="CENTER" />
+      <Pane fx:id="playerPane4" layoutX="220.0" layoutY="50.0" maxHeight="100.0" maxWidth="100.0" minHeight="100.0" minWidth="100.0" prefHeight="100.0" prefWidth="100.0" />
+      <Text fx:id="playerName4" layoutX="220.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%gameplay.player_4" textAlignment="CENTER" />
+      <Pane fx:id="playerPane5" layoutX="440.0" layoutY="50.0" maxHeight="100.0" maxWidth="100.0" minHeight="100.0" minWidth="100.0" prefHeight="100.0" prefWidth="100.0" />
+      <Text fx:id="playerName5" layoutX="440.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%gameplay.player_5" textAlignment="CENTER" />
+      <Pane fx:id="playerPane6" layoutX="660.0" layoutY="50.0" maxHeight="100.0" maxWidth="100.0" minHeight="100.0" minWidth="100.0" prefHeight="100.0" prefWidth="100.0" />
+      <Text fx:id="playerName6" layoutX="660.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%gameplay.player_6" textAlignment="CENTER" />
+      <Pane fx:id="playerPane7" layoutX="880.0" layoutY="50.0" maxHeight="100.0" maxWidth="100.0" minHeight="100.0" minWidth="100.0" prefHeight="100.0" prefWidth="100.0" />
+      <Text fx:id="playerName7" layoutX="880.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%gameplay.player_7" textAlignment="CENTER" />
+      <Pane fx:id="colorSelectionPane" layoutX="630.0" layoutY="500.0" maxHeight="100.0" maxWidth="270.0" minHeight="100.0" minWidth="270.0" prefHeight="100.0" prefWidth="270.0" visible="false">
+         <children>
+            <Text layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%gameplay.pick_color" textAlignment="CENTER" wrappingWidth="270.0" y="75.0" />
+            <Pane fx:id="colorSelection1" layoutY="6.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" prefHeight="60.0" prefWidth="60.0" />
+            <Pane fx:id="colorSelection2" layoutX="70.0" layoutY="6.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" prefHeight="60.0" prefWidth="60.0" />
+            <Pane fx:id="colorSelection3" layoutX="140.0" layoutY="6.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" prefHeight="60.0" prefWidth="60.0" />
+            <Pane fx:id="colorSelection4" layoutX="210.0" layoutY="6.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" prefHeight="60.0" prefWidth="60.0" />
+         </children>
+      </Pane>
+      <Text fx:id="actionDescription" layoutX="200.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%gameplay.current_action" textAlignment="CENTER" wrappingWidth="800.0" />
+   </children>
+</AnchorPane>

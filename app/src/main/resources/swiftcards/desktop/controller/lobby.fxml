@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="800.0" maxWidth="1200.0" minHeight="800.0" minWidth="1200.0" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="swiftcards.desktop.controller.LobbyController">
+   <children>
+      <Text layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%lobby.header" textAlignment="CENTER" wrappingWidth="1200.0">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Text>
+      <Text fx:id="loadingInfoText" layoutX="560.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Loading ..." textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <GridPane fx:id="playerSlotsPane" layoutX="100.0" layoutY="100.0" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" visible="false">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="playerSlot1Btn" disable="true" maxWidth="200.0" minWidth="200.0" mnemonicParsing="false" prefWidth="200.0" text="Slot 1" />
+            <Button fx:id="playerSlot2Btn" disable="true" maxWidth="200.0" minWidth="200.0" mnemonicParsing="false" prefWidth="200.0" text="Slot 2" GridPane.rowIndex="1" />
+            <Button fx:id="playerSlot3Btn" disable="true" maxWidth="200.0" minWidth="200.0" mnemonicParsing="false" prefWidth="200.0" text="Slot 3" GridPane.rowIndex="2" />
+            <Button fx:id="playerSlot4Btn" disable="true" maxWidth="200.0" minWidth="200.0" mnemonicParsing="false" prefWidth="200.0" text="Slot 4" GridPane.rowIndex="3" />
+            <Button fx:id="playerSlot5Btn" disable="true" maxWidth="200.0" minWidth="200.0" mnemonicParsing="false" prefWidth="200.0" text="Slot 5" GridPane.rowIndex="4" />
+            <Button fx:id="playerSlot6Btn" disable="true" maxWidth="200.0" minWidth="200.0" mnemonicParsing="false" prefWidth="200.0" text="Slot 6" GridPane.rowIndex="5" />
+            <Button fx:id="playerSlot7Btn" disable="true" maxWidth="200.0" minWidth="200.0" mnemonicParsing="false" prefWidth="200.0" text="Slot 7" GridPane.rowIndex="6" />
+            <Button fx:id="playerSlot8Btn" disable="true" maxWidth="200.0" minWidth="200.0" mnemonicParsing="false" prefWidth="200.0" text="Slot 8" GridPane.rowIndex="7" />
+            <Button fx:id="playerSlot9Btn" disable="true" maxWidth="200.0" minWidth="200.0" mnemonicParsing="false" prefWidth="200.0" text="Slot 9" GridPane.rowIndex="8" />
+            <Button fx:id="playerSlot10Btn" disable="true" maxWidth="200.0" minWidth="200.0" mnemonicParsing="false" prefWidth="200.0" text="Slot 10" GridPane.rowIndex="9" />
+         </children>
+      </GridPane>
+      <CheckBox fx:id="readinessCheckbox" layoutX="100.0" layoutY="497.0" mnemonicParsing="false" onAction="#toggleReadiness" text="%lobby.readiness_checkbox" visible="false" />
+      <Button layoutX="100.0" layoutY="658.0" maxWidth="100.0" minWidth="100.0" mnemonicParsing="false" onAction="#showQuitingConfirmModal" prefWidth="100.0" text="%lobby.exit_lobby_button" />
+      <Button fx:id="startGameBtn" disable="true" layoutX="208.0" layoutY="658.0" maxWidth="100.0" minWidth="100.0" mnemonicParsing="false" onAction="#startGame" prefWidth="100.0" text="%lobby.start_game" visible="false" />
+   </children>
+</AnchorPane>
